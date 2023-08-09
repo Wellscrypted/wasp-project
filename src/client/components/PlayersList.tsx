@@ -27,18 +27,20 @@ const PlayersList = (props: PlayerListProps) => {
         </thead>
         <tbody>
           <tr>
-            <th>id</th>
-            <th>Player Ref</th>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th className="ft-bold fs-14">id</th>
+            <th className="ft-bold fs-14">Player Ref</th>
+            <th className="ft-bold fs-14">First Name</th>
+            <th className="ft-bold fs-14">Last Name</th>
+            <th className="ft-bold fs-14">User Id</th>
           </tr>
           {players?.map((player: any, idx: any) => {
             return (
               <tr key={idx}>
-                <td>{player?.player_id}</td>
-                <td>{player?.player_ref}</td>
-                <td>{capFirstLetter(player?.player_first_name)}</td>
-                <td>{capFirstLetter(player?.player_last_name)}</td>
+                <td className="ft-reg fs-14">{player?.player_id}</td>
+                <td className="ft-reg fs-14">{player?.player_ref}</td>
+                <td className="ft-reg fs-14">{capFirstLetter(player?.player_first_name)}</td>
+                <td className="ft-reg fs-14">{capFirstLetter(player?.player_last_name)}</td>
+                <td className="ft-reg fs-14">{player.user_id}</td>
               </tr>
             );
           })}

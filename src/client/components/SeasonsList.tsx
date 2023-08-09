@@ -25,20 +25,20 @@ const SeasonsList = (props: SeasonListProps) => {
         </thead>
         <tbody>
           <tr>
-            <th>id</th>
-            <th>Team Name</th>
-            <th>Season Name</th>
-            <th>Season Year</th>
-            <th>Grade</th>
+            <th className="ft-bold fs-14">id</th>
+            <th className="ft-bold fs-14">Team Name</th>
+            <th className="ft-bold fs-14">Season Name</th>
+            <th className="ft-bold fs-14">Season Year</th>
+            <th className="ft-bold fs-14">Grade</th>
           </tr>
           {seasons?.map((season: any, idx: any) => {
             return (
               <tr key={idx}>
-                <td>{season?.season_id}</td>
-                <td>{capFirstLetter(season?.team_name)}</td>
-                <td>{capFirstLetter(season?.season_name)}</td>
-                <td>{season?.season_year}</td>
-                <td>{season?.grade}</td>
+                <td className="ft-reg fs-14">{season?.season_id}</td>
+                <td className="ft-reg fs-14">{capFirstLetter(season?.team_name)}</td>
+                <td className="ft-reg fs-14">{capFirstLetter(season?.season_name)}</td>
+                <td className="ft-reg fs-14">{season?.season_year}</td>
+                <td className="ft-reg fs-14">{season?.grade}</td>
               </tr>
             );
           })}

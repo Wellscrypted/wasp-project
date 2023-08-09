@@ -1,5 +1,6 @@
 // import waspLogo from './waspLogo.png';
 import './App.css';
+import './fontStyles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useQuery } from '@wasp/queries';
 import PlayersList from './components/PlayersList';

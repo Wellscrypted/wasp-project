@@ -86,3 +86,29 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
     monospace;
 }
+
+.container-fluid-0 {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.center-v-align {
+  display: flex !important;
+  align-items: center !important;
+}
+.center-align {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.center-vh-align {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.right-align {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
