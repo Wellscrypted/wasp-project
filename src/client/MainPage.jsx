@@ -14,7 +14,7 @@ const MainPage = () => {
     return (
       <div>
         {/* <input type="checkbox" id={String(player.id)} checked={player.isDone} /> */}
-        {player.play_first_name} {player.player_last_name}
+        {player.player_first_name} {player.player_last_name}
       </div>
     );
   };
