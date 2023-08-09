@@ -1,14 +1,14 @@
-import getUsers from '@wasp/queries/getUsers';
-import { useQuery } from '@wasp/queries';
 import { Table } from 'reactstrap';
 
 const UsersList = (props) => {
-  const { data: users, isLoading, error } = useQuery(getUsers);
+  const { users, seasons, players } = props;
   if (!users?.length) return <div>No users</div>;
 
   function capFirstLetter(string) {
     return string[0].toUpperCase() + string.slice(1);
   }
+
+  console.log('users: ', users);
 
   return (
     <div className="m-3">

@@ -1,9 +1,8 @@
-import getSeasons from '@wasp/queries/getSeasons';
-import { useQuery } from '@wasp/queries';
 import { Table } from 'reactstrap';
 
 const SeasonsList = (props) => {
-  const { data: seasons, isLoading, error } = useQuery(getSeasons);
+  const { users, seasons, players } = props;
+
   if (!seasons?.length) return <div>No seasons</div>;
 
   function capFirstLetter(string) {

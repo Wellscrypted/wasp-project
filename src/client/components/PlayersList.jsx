@@ -1,9 +1,8 @@
-import getPlayers from '@wasp/queries/getPlayers';
-import { useQuery } from '@wasp/queries';
 import { Table } from 'reactstrap';
 
 const PlayersList = (props) => {
-  const { data: players, isLoading, error } = useQuery(getPlayers);
+  const { users, seasons, players } = props;
+
   if (!players?.length) return <div>No players</div>;
 
   function capFirstLetter(string) {
