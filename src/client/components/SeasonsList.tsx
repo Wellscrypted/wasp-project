@@ -1,11 +1,17 @@
 import { Table } from 'reactstrap';
 
-const SeasonsList = (props) => {
+interface SeasonListProps {
+  users: any;
+  seasons: any;
+  players: any;
+}
+
+const SeasonsList = (props: SeasonListProps) => {
   const { users, seasons, players } = props;
 
   if (!seasons?.length) return <div>No seasons</div>;
 
-  function capFirstLetter(string) {
+  function capFirstLetter(string: string) {
     return string[0].toUpperCase() + string.slice(1);
   }
 
@@ -25,7 +31,7 @@ const SeasonsList = (props) => {
             <th>Season Year</th>
             <th>Grade</th>
           </tr>
-          {seasons?.map((season, idx) => {
+          {seasons?.map((season: any, idx: any) => {
             return (
               <tr key={idx}>
                 <td>{season?.season_id}</td>

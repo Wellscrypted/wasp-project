@@ -7,7 +7,7 @@ app waspProject {
 
 route RootRoute { path: "/", to: App }
 page App {
-  component: import Main from "@client/App.jsx"
+  component: import Main from "@client/App.tsx"
 }
 
 entity User {=psl
