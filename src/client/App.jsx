@@ -1,10 +1,10 @@
 // import waspLogo from './waspLogo.png';
-import './Main.css';
+import './App.css';
 import PlayersList from './components/PlayersList';
 import SeasonsList from './components/SeasonsList';
 import UsersList from './components/UsersList';
 
-const MainPage = () => {
+const App = () => {
   return (
     <div>
       <div style={{ margin: '20px 0px' }}>
@@ -23,4 +23,4 @@ const MainPage = () => {
     </div>
   );
 };
-export default MainPage;
+export default App;

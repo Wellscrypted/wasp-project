@@ -5,9 +5,9 @@ app waspProject {
   title: "wasp-project"
 }
 
-route RootRoute { path: "/", to: MainPage }
-page MainPage {
-  component: import Main from "@client/MainPage.jsx"
+route RootRoute { path: "/", to: App }
+page App {
+  component: import Main from "@client/App.jsx"
 }
 
 entity User {=psl
