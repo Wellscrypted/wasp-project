@@ -9,3 +9,47 @@ route RootRoute { path: "/", to: MainPage }
 page MainPage {
   component: import Main from "@client/MainPage.jsx"
 }
+
+entity User {=psl
+  user_id       Int      @id @default(autoincrement())
+  email         String   @unique
+  password      String
+  first_name    String
+  last_name     String
+  admin_user    Boolean  @default(false)
+  players       Player[] @relation("user_players") // Define the one-to-many relationship to Player
+psl=}     
+
+entity Player {=psl
+  player_id        Int      @id @default(autoincrement())
+  player_first_name  String
+  player_last_name String
+  player_ref       String?
+  user             User?     @relation("user_players", fields: [user_id], references: [user_id]) // Define the back-reference to User
+  user_id          Int?
+  seasons          Season[] @relation("player_seasons") // Define the one-to-many relationship to Season
+psl=}
+
+entity Season {=psl
+  season_id   Int     @id @default(autoincrement())
+  team_name   String
+  season_name String
+  season_year String
+  players     Player[] @relation("player_seasons") // Define the back-reference to Player
+  grade   Int?
+psl=}
+
+query getPlayers {
+  fn: import { getPlayers } from "@server/queries.js",
+  entities: [Player]
+}
+
+query getUsers {
+  fn: import { getUsers } from "@server/queries.js",
+  entities: [User]
+}
+
+query getSeasons {
+  fn: import { getSeasons } from "@server/queries.js",
+  entities: [Season]
+}
