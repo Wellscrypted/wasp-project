@@ -10,6 +10,8 @@ const PlayersList = (props) => {
     return string[0].toUpperCase() + string.slice(1);
   }
 
+  console.log('players: ', players);
+
   return (
     <div className="m-3">
       <Table striped bordered hover>
@@ -28,10 +30,10 @@ const PlayersList = (props) => {
           {players?.map((player, idx) => {
             return (
               <tr key={idx}>
-                <td>{player.player_id}</td>
-                <td>{player.player_ref}</td>
-                <td>{capFirstLetter(player.player_first_name)}</td>
-                <td>{capFirstLetter(player.player_last_name)}</td>
+                <td>{player?.player_id}</td>
+                <td>{player?.player_ref}</td>
+                <td>{capFirstLetter(player?.player_first_name)}</td>
+                <td>{capFirstLetter(player?.player_last_name)}</td>
               </tr>
             );
           })}

@@ -29,11 +29,11 @@ const UsersList = (props) => {
           {users?.map((user, idx) => {
             return (
               <tr key={idx}>
-                <td>{user.user_id}</td>
+                <td>{user?.user_id}</td>
                 <td>{capFirstLetter(user?.first_name)}</td>
-                <td>{capFirstLetter(user.last_name)}</td>
-                <td>{user.email}</td>
-                <td>{user.is_admin ? 'Yes' : 'No'}</td>
+                <td>{capFirstLetter(user?.last_name)}</td>
+                <td>{user?.email}</td>
+                <td>{user?.is_admin ? 'Yes' : 'No'}</td>
               </tr>
             );
           })}

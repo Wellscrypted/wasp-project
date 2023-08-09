@@ -29,11 +29,11 @@ const SeasonsList = (props) => {
           {seasons?.map((season, idx) => {
             return (
               <tr key={idx}>
-                <td>{season.season_id}</td>
-                <td>{capFirstLetter(season.team_name)}</td>
-                <td>{capFirstLetter(season.season_name)}</td>
-                <td>{season.season_year}</td>
-                <td>{season.grade}</td>
+                <td>{season?.season_id}</td>
+                <td>{capFirstLetter(season?.team_name)}</td>
+                <td>{capFirstLetter(season?.season_name)}</td>
+                <td>{season?.season_year}</td>
+                <td>{season?.grade}</td>
               </tr>
             );
           })}
