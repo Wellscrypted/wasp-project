@@ -33,7 +33,7 @@ const SeasonsList = (props) => {
                 <td>{capFirstLetter(season.team_name)}</td>
                 <td>{capFirstLetter(season.season_name)}</td>
                 <td>{season.season_year}</td>
-                <td>{season.greade}</td>
+                <td>{season.grade}</td>
               </tr>
             );
           })}
