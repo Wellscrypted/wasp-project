@@ -26,7 +26,7 @@ const SeasonsList = (props) => {
             <th>Season Year</th>
             <th>Grade</th>
           </tr>
-          {seasons.map((season, idx) => {
+          {seasons?.map((season, idx) => {
             return (
               <tr key={idx}>
                 <td>{season.season_id}</td>

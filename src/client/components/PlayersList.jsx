@@ -6,8 +6,6 @@ const PlayersList = (props) => {
   const { data: players, isLoading, error } = useQuery(getPlayers);
   if (!players?.length) return <div>No players</div>;
 
-  console.log('players', players);
-
   function capFirstLetter(string) {
     return string[0].toUpperCase() + string.slice(1);
   }

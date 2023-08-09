@@ -26,7 +26,7 @@ const UsersList = (props) => {
             <th>Email</th>
             <th>Admin</th>
           </tr>
-          {users.map((user, idx) => {
+          {users?.map((user, idx) => {
             return (
               <tr key={idx}>
                 <td>{user.user_id}</td>
