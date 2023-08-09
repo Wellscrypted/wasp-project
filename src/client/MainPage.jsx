@@ -1,40 +1,25 @@
-import waspLogo from './waspLogo.png';
+// import waspLogo from './waspLogo.png';
 import './Main.css';
-import getPlayers from '@wasp/queries/getPlayers';
-import getUsers from '@wasp/queries/getUsers';
-import getSeasons from '@wasp/queries/getSeasons';
-import { useQuery } from '@wasp/queries';
+import PlayersList from './components/PlayersList';
+import SeasonsList from './components/SeasonsList';
+import UsersList from './components/UsersList';
 
 const MainPage = () => {
-  const { data: players, isLoading, error } = useQuery(getPlayers);
-  // const { data: users, isLoading, error } = useQuery(getUsers);
-  // const { data: seasons, isLoading, error } = useQuery(getSeasons);
-
-  const Player = ({ player }) => {
-    return (
-      <div>
-        {/* <input type="checkbox" id={String(player.id)} checked={player.isDone} /> */}
-        {player.player_first_name} {player.player_last_name}
-      </div>
-    );
-  };
-
-  const PlayersList = ({ players }) => {
-    if (!players?.length) return <div>No players</div>;
-
-    return (
-      <div>
-        {players.map((player, idx) => (
-          <Player player={player} key={idx} />
-        ))}
-      </div>
-    );
-  };
-
   return (
     <div>
-      Players
-      {players && <PlayersList players={players} />}
+      <div style={{ margin: '20px 0px' }}>
+        Users
+        <UsersList />
+      </div>
+
+      <div style={{ margin: '20px 0px' }}>
+        Players
+        <PlayersList />
+      </div>
+      <div style={{ margin: '20px 0px' }}>
+        Seasons
+        <SeasonsList />
+      </div>
     </div>
   );
 };
