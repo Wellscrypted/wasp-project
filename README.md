@@ -33,9 +33,9 @@ David Vinson
 +Database (view): wasp db studio
 
 ## Usage
-This project as it is, is for a soccer gallery.
--Parent(user) creates an account
--Parent adds players(many) by player_ref or a submitted form approved by admin
--Admin adds players(many - player_ref will auto generate)
--Admin adds seasons by team name, year, grade, and season (Summer, Winter, Spring, Fall)
--Admin assigns players to seasons(many)
+- This project as it is, is for a soccer gallery.
+-- Parent(user) creates an account
+-- Parent adds players(many) by player_ref or a submitted form approved by admin
+-- Admin adds players(many - player_ref will auto generate)
+-- Admin adds seasons by team name, year, grade, and season (Summer, Winter, Spring, Fall)
+-- Admin assigns players to seasons(many)
