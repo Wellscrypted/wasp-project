@@ -2,8 +2,8 @@
 (ws-wellstruck-soccer-gallery)
 
 ### Developers
-AJ Wells
-David Vinson
+- AJ Wells
+- David Vinson
 
 ## Table of Contents
 - [Introduction](#introduction)
