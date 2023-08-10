@@ -16,11 +16,7 @@ David Vinson
 - [License](#license)
 
 ## Introduction
-++(We) wanted to strengthen our skills as newer developers by trying a newer method of building a Full Stack Project using Wasp.
-++In this project, we are hoping to be able to deploy the created database to a private server.
-++As newer developers, we have not yet learned this skill due to the educational bootcamp we went through.
-++Hopefully other bootcamp developers will also find this as useful tool.
---Tailwind is also new to us, so we added bootstrap to start and then possibly move to tailwind.
+(We) wanted to strengthen our skills as newer developers by trying a newer method of building a Full Stack Project using Wasp. In this project, we are hoping to be able to deploy the created database to a private server. As newer developers, we have not yet learned this skill due to the educational bootcamp we went through. Hopefully other bootcamp developers will also find this as useful tool. Tailwind is also new to us, so we added bootstrap to start and then possibly move to tailwind.
 
 ## Highlights
 
