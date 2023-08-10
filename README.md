@@ -1,5 +1,5 @@
 # Wasp-Project
-(ws-wellstruck-soccer-gallery)
+(ws-soccer-gallery)
 
 ### Developers
 - AJ Wells
