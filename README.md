@@ -1,11 +1,14 @@
 # Wasp-Project
+
 (ws-soccer-gallery)
 
 ### Developers
+
 - AJ Wells
 - David Vinson
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Features](#features)
 - [Getting Started](#getting-started)
@@ -16,7 +19,10 @@
 - [License](#license)
 
 ## Introduction
-- (We) wanted to strengthen our skills as newer developers by trying a newer method of building a Full Stack Project using Wasp. In this project, we are hoping to be able to deploy the created database to a private server. As newer developers, we have not yet learned this skill due to the educational bootcamp we went through. Hopefully other bootcamp developers will also find this as useful tool. Tailwind is also new to us, so we added bootstrap to start and then possibly move to tailwind.
+
+We as newer developers, wanted to strengthen our skills by trying a newer method of building a Full Stack Project using Wasp.
+<br>In this project, we are hoping to be able to deploy the created database to a private server.
+<br>This is a skill we haven't learned yet due the limited focus of a bootcamp we went through.
 
 ## Highlights
 
@@ -27,15 +33,19 @@
 - Highlight 5: Node.js / Prisma
 
 ## Getting Started
+
 (Wasp documentation should be reviewed first, before starting)
+
 - Startup: wasp start
 - Migration (db): wasp db migrate-dev
 - Database (view): wasp db studio
 
-## Usage
-(This project as it is, is for a soccer gallery)
+## App Usage
+
+(This project is for a soccer profile / photo gallery)
+
 - Parent(user) creates an account
-- Parent adds players(many) by player_ref or a submitted form approved by admin
-- Admin adds players(many - player_ref will auto generate)
+- Parent adds player(s) by player_ref or a submitted form (approved by admin).
+- Admin adds player(s) (player_ref will auto generate)
 - Admin adds seasons by team name, year, grade, and season (Summer, Winter, Spring, Fall)
-- Admin assigns players to seasons(many)
+- Admin assigns players to season(s)
