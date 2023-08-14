@@ -2,7 +2,10 @@ app waspProject {
   wasp: {
     version: "^0.11.1"
   },
-  title: "wasp-project"
+  title: "wasp-project",
+  db: {
+    system: PostgreSQL
+  }
 }
 
 route RootRoute { path: "/", to: App }
