@@ -9,7 +9,7 @@ interface UserListProps {
 
 const UsersList = (props: UserListProps) => {
   const { users, seasons, players } = props;
-  if (!users?.length) return <div>No users</div>;
+  if (!users?.length) return <div>No users right now</div>;
 
   function capFirstLetter(string: string) {
     return string[0].toUpperCase() + string.slice(1);
