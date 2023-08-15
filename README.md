@@ -115,5 +115,4 @@ We as newer developers, wanted to strengthen our skills by trying a newer method
    <br>.: Follow all instructions during build and save secret message.
    <br>.: Message will appear that your project has now deployed.
 
-The following secret was added to wasp-project-server:
-DATABASE_URL=postgres://wasp_project_server:TlO7ac1yNDGXGDF@wasp-project-db.flycast:5432/wasp_project_server?sslmode=disable
+8. Future changes pushed live run `wasp deploy fly deploy`
